@@ -1,0 +1,74 @@
+
+<Comp>:
+    canvas.before:
+        Color:
+            rgba: (0, 0 , 1, 1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    orientation: 'vertical'
+    padding: 10
+    BoxLayout:
+    Label:
+        text: 'Olá, seja bem-vindo ao Doamor!'
+        font_size: 30
+        text_size: self.size
+        padding: 20
+    Label:
+        text: 'Nossa fundação tem o intuito de arrecadar doações de agasalhos, roupas, itens de higiene pessoal e alimentos para pessoas em situação de rua'
+        font_size: 18
+        text_size: self.size
+    Label:
+        text: 'Preencha os campos abaixo'
+        font_size: 17
+        text_size: self.size
+
+    BoxLayout:
+        Label:
+            text: 'Nome'
+    BoxLayout:
+        spacing: 10
+        TextInput:
+            id: no1
+    BoxLayout:
+        Label:
+            spacing: 5
+            text: 'Data de nascimento'
+    BoxLayout:
+        TextInput:
+            id: idd1
+    BoxLayout:
+        Label:
+            spacing: 5
+            text: 'Cidade'
+    BoxLayout:
+        TextInput:
+            id: cdd1
+    BoxLayout:
+        Label:
+            spacing: 5
+            text: 'Número para contato'
+    BoxLayout:
+        TextInput:
+            id: nmr
+    BoxLayout:
+        Label:
+            text: 'Diga como pode nos ajudar'
+    BoxLayout:
+        spacing: 10
+        TextInput:
+            id: 1
+    Label:
+        text: 'Nossa campanha é mais que um ato de bondade, é um gesto de amor ao próximo. Agradecemos pela participação!'
+        font_size: 18
+        text_size: self.size
+        spacing: 20
+    Button:
+        text: 'Prosseguir com a doação!'
+        spacing: 10
+        background_color:0, 1, 0
+        on_press: root.printar()
+
+
+
+
